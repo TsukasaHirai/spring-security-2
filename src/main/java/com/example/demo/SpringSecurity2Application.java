@@ -9,6 +9,7 @@ public class SpringSecurity2Application {
 	public static void main(String[] args) {
 		
 		System.err.println("master");
+		System.err.println("master2");
 		SpringApplication.run(SpringSecurity2Application.class, args);
 	}
 
