@@ -35,6 +35,8 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     public User createUserDetails(SiteUser user) {
         var grantedAuthorities = new HashSet<GrantedAuthority>();
         grantedAuthorities.add(new SimpleGrantedAuthority("ROLE_" + user.getRole()));
+        
+        System.err.println("test");
 
         return new User(user.getUsername(), user.getPassword(), grantedAuthorities);
     }
